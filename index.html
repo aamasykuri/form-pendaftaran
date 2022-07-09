@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+  <style>@media print {#ghostery-tracker-tally {display:none !important}}</style>
+  <title>Formulir Pendaftaran Keanggotaan</title>
+</head>
+
+<body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Formulir Pendaftaran Keanggotaan</h1>
+        <p id="description" class="description text-center">
+          Terima kasih telah datang dan mendaftar
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Nama</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Masukkan namamu di sini" required="">
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Masukkan emailmu di sini" required="">
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Umur<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="umur">
+        </div>
+        <div class="form-group">
+          <p>Divisi apa yang ingin kamu daftar?</p>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Pilih Divisi</option>
+            <option value="research">Penelitian</option>
+            <option value="hrd">PSDP</option>
+            <option value="kesra">Kesra</option>
+            <option value="infokom">Infokom</option>
+            <option value="jaringan">Jaringan</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Apakah kamu akan merekomendasikan organisasi ini ke orang lain?</p>
+          <label>
+            <input name="user-recommend" value="tentu" type="radio" class="input-radio" checked="">Tentu Saja</label>
+          <label>
+            <input name="user-recommend" value="mungkin" type="radio" class="input-radio">Mungkin</label>
+
+          <label><input name="user-recommend" value="tidak" type="radio" class="input-radio">Tidak</label>
+        </div>
+
+        <div class="form-group">
+          <p>Dari mana kamu tahu tentang pendaftaran ini?</p>
+          <select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Pilih Salah Satu</option>
+            <option value="youtube">Youtube</option>
+            <option value="instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="twitter">Twitter</option>
+            <option value="email">Email</option>
+            <option value="teman">Teman</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Apa pekerjaan yang sedang kamu lakukan sekarang ini?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label><input name="prefer" id="pekerjaan" value="pns" type="checkbox" class="input-checkbox">PNS</label>
+          <label>
+            <input name="prefer" id="pekerjaan" value="pekerjaswasta" type="checkbox" class="input-checkbox">Pekerja Swasta</label>
+          <label><input name="prefer" id="pekerjaan" value="wirausaha" type="checkbox" class="input-checkbox">Wirausaha</label>
+          <label><input name="prefer" id="pekerjaan" value="mahasiswa" type="checkbox" class="input-checkbox">Mahasiswa</label>
+          <label><input name="prefer" id="pekerjaan" value="pelajar" type="checkbox" class="input-checkbox">Pelajar</label>
+          <label><input name="prefer" id="pekerjaan" value="iburumahtangga" type="checkbox" class="input-checkbox">Ibu Rumah Tangga</label>
+          <label><input name="prefer" id="pekerjaan" value="pedagang" type="checkbox" class="input-checkbox">Pedagang</label>
+          <label><input name="prefer" id="pekerjaan" value="lainnya" type="checkbox" class="input-checkbox">Lainnya</label>
+        </div>
+
+        <div class="form-group">
+          <p>Ada kritik dan saran?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Tulis kritik dan saranmu di sini..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  
+
+</body>
+</html>
